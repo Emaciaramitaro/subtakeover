@@ -651,16 +651,10 @@ body {
         var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
 
-        // Logica di simulazione del login
-        if (email === 'test@example.com' && password === 'password123') {
-            document.getElementById('message').textContent = 'Login Successful!';
-            document.getElementById('message').style.color = 'green';
-        } else {
-            document.getElementById('message').textContent = 'Invalid email or password.';
-            document.getElementById('message').style.color = 'red';
-        }
+        // Mostra sempre il messaggio di login successful
+        document.getElementById('message').textContent = 'Login Successful!';
+        document.getElementById('message').style.color = 'green';
     });
-		
 </script>
 	
 <!-- start static homepage tiles --> 
