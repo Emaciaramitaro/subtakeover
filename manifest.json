@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Prova Estensione",
+    "version": "1.0",
+    "description": "Questa è un'estensione di prova.",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": []
+}
