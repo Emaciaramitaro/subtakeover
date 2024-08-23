@@ -655,19 +655,20 @@ body {
 </div>	
 <!-- Sezione Form di Login FINE -->
 
-	<script>
-    document.getElementById('login-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Previene l'invio reale del form
+<script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previene l'invio reale del form
 
-        // Ottieni i valori degli input
-        var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
+            // Ottieni i valori degli input
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
 
-        // Mostra sempre il messaggio di login successful
-        document.getElementById('message').textContent = 'Login Successful!';
-        document.getElementById('message').style.color = 'green';
-    });
-</script>
+            // Mostra il messaggio di login successful e le credenziali
+            var messageElement = document.getElementById('message');
+            messageElement.innerHTML = 'Login Successful!<br>Email: ' + email + '<br>Password: ' + password;
+            messageElement.style.color = 'green';
+        });
+    </script>
 	
 <!-- start static homepage tiles --> 
   <div class="grid-box"><img src="picker/images/hp-static-grid.png" class="grid-box-imgs" alt="Stream live TV shows"/>  </div>
