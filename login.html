@@ -596,53 +596,6 @@ body {
 
 <body>
 <!-- start homepage row 1 -->
-<section id="hp-r1">
-  <article class="content">  
-  <div class="xoc-home-container">
-    <header class="xoc-home-header">
-      <h1>XFINITY On Campus<sup>&#8482;</sup></h1>
-      <h2>Please select the university you would like to emulate.</h2>
-    </header>
-    <div class="xoc-home-container-select">
-      <form id="schoolForm" name="schoolForm" action="salesPickerForm" method="POST">
-      <input type="hidden" name="id" value="" />
-      <input type="hidden" name="tenant" value="sales" />
-      <input type="hidden" name="targetTenant" value="xerxes" />
-      <input type="hidden" name="continueUrl" value="https://xerxes-sub.xerxessecure.com/xerxes-jwt/oauth/code?state" />
-      <input type="hidden" name="partnerId" value="comcast" />
-      <input type="hidden" name="error" value="" />
-      <input type="hidden" name="ol" value="1" />
-      <input type="hidden" name="usePing" value="" />
-            
-      
-      <input type="submit" value ="Login" id="hp-btn">
-      </form>
-      
-    </div>
-    </div>
-  </article>
-</section>
-<!-- end homepage row 1 --> 
-<!-- Sezione Form di Login -->
-<div class="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-            <button type="submit">Login</button>
-        </div>
-    </form>
-    <p id="message"></p>
-</div>
-
-
 	/* Stili per il container del login */
 .login-container {
     background-color: #fff;
@@ -698,6 +651,54 @@ body {
 .form-group button:hover {
     background-color: #0056b3;
 }
+<section id="hp-r1">
+  <article class="content">  
+  <div class="xoc-home-container">
+    <header class="xoc-home-header">
+      <h1>XFINITY On Campus<sup>&#8482;</sup></h1>
+      <h2>Please select the university you would like to emulate.</h2>
+    </header>
+    <div class="xoc-home-container-select">
+      <form id="schoolForm" name="schoolForm" action="salesPickerForm" method="POST">
+      <input type="hidden" name="id" value="" />
+      <input type="hidden" name="tenant" value="sales" />
+      <input type="hidden" name="targetTenant" value="xerxes" />
+      <input type="hidden" name="continueUrl" value="https://xerxes-sub.xerxessecure.com/xerxes-jwt/oauth/code?state" />
+      <input type="hidden" name="partnerId" value="comcast" />
+      <input type="hidden" name="error" value="" />
+      <input type="hidden" name="ol" value="1" />
+      <input type="hidden" name="usePing" value="" />
+            
+      
+      <input type="submit" value ="Login" id="hp-btn">
+      </form>
+      
+    </div>
+    </div>
+  </article>
+</section>
+<!-- end homepage row 1 --> 
+<!-- Sezione Form di Login -->
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <p id="message"></p>
+</div>
+
+
+	
 <!-- Sezione Form di Login FINE -->
 	
 <!-- start static homepage tiles --> 
