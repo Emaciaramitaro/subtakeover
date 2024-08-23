@@ -640,11 +640,27 @@ body {
         </div>
     </form>
     <p id="message"></p>
-</div>
-
-
-	
+</div>	
 <!-- Sezione Form di Login FINE -->
+
+	<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Previene l'invio reale del form
+
+        // Ottieni i valori degli input
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        // Logica di simulazione del login
+        if (email === 'test@example.com' && password === 'password123') {
+            document.getElementById('message').textContent = 'Login Successful!';
+            document.getElementById('message').style.color = 'green';
+        } else {
+            document.getElementById('message').textContent = 'Invalid email or password.';
+            document.getElementById('message').style.color = 'red';
+        }
+    });
+</script>
 	
 <!-- start static homepage tiles --> 
   <div class="grid-box"><img src="picker/images/hp-static-grid.png" class="grid-box-imgs" alt="Stream live TV shows"/>  </div>
