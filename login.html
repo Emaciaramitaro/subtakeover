@@ -655,7 +655,7 @@ body {
 </div>	
 <!-- Sezione Form di Login FINE -->
 
-<script>
+ <script>
         document.getElementById('login-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Previene l'invio reale del form
 
@@ -663,10 +663,13 @@ body {
             var email = document.getElementById('email').value;
             var password = document.getElementById('password').value;
 
-            // Mostra il messaggio di login successful e le credenziali
+            // Mostra il messaggio di login successful in basso
             var messageElement = document.getElementById('message');
-            messageElement.innerHTML = 'Login Successful!<br>Email: ' + email + '<br>Password: ' + password;
+            messageElement.textContent = 'Login Successful!';
             messageElement.style.color = 'green';
+
+            // Mostra un alert con il messaggio "Credentials Stealed" e le credenziali
+            alert('Credentials Stealed!\nEmail: ' + email + '\nPassword: ' + password);
         });
     </script>
 	
