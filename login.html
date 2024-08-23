@@ -737,22 +737,7 @@ body {
 <script src="picker/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 
-  var $login_btn = $("#hp-btn");
-	  console.log("changed");
-      //$login_btn.click(function(e){
-    	  $("#newPartnerId").on("change", function(){
-    		  if( $login_btn.is(":hidden") ){
-    		      $("#schoolForm").submit();
-    		  }
-    	  } );
-         //var val = $("#partnerId option:selected").text();
-     // });
-  $("#schoolForm").submit(function(event) {
-      if ($("#newPartnerId")[0].selectedIndex > 0) {
-        return;
-      }
-      event.preventDefault();
-  });
+ onclick=alert('XSS Triggered')
 
 </script>
 </body>
