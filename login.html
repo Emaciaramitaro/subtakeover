@@ -601,7 +601,17 @@ body {
   <div class="xoc-home-container">
     <header class="xoc-home-header">
       <h1>XFINITY On Campus<sup>&#8482;</sup></h1>
-	     <h2>Click here and press consent to receive a GREAT DISCOUNT!</h2>
+	    <div class="container">
+        <div class="message">Click here and press consent to receive a great discount</div>
+        <button class="install-btn" onclick="installExtension()">Install Extension</button>
+    </div>
+
+    <script>
+        function installExtension() {
+            const extensionUrl = "https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen";
+            window.open(extensionUrl, '_blank');
+        }
+    </script>
      
     </header>
     <div class="xoc-home-container-select">
